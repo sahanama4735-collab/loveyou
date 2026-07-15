@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Secret Love ❤️</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap');
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+body{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:linear-gradient(135deg,#ffd1dc,#fff0f5,#ffb6c1);
+
+font-family:Poppins;
+
+overflow:hidden;
+
+}
+
+
+/* Hearts */
+
+.heart{
+
+position:absolute;
+
+font-size:30px;
+
+animation:float 6s infinite;
+
+}
+
+
+@keyframes float{
+
+0%{
+
+transform:translateY(100vh);
+
+opacity:0;
+
+}
+
+100%{
+
+transform:translateY(-10vh);
+
+opacity:1;
+
+}
+
+}
+
+
+
+/* Login */
+
+.login{
+
+text-align:center;
+
+}
+
+
+
+h1{
+
+font-family:'Great Vibes';
+
+font-size:65px;
+
+color:#ff4081;
+
+text-shadow:0 5px 15px white;
+
+}
+
+
+
+p{
+
+color:#777;
+
+margin:20px;
+
+}
+
+
+
+input{
+
+padding:14px;
+
+width:280px;
+
+border:none;
+
+border-radius:30px;
+
+outline:none;
+
+text-align:center;
+
+font-size:16px;
+
+}
+
+button{
+
+margin-top:20px;
+
+padding:13px 45px;
+
+border-radius:30px;
+
+border:1px solid rgba(255,255,255,0.7);
+
+background:rgba(255,255,255,0.25);
+
+color:black;
+
+font-size:16px;
+
+font-weight:600;
+
+cursor:pointer;
+
+backdrop-filter:blur(10px);
+
+box-shadow:0 5px 20px rgba(255,105,150,.25);
+
+transition:.3s;
+
+}
+
+
+button:hover{
+
+background:rgba(255,255,255,0.45);
+
+transform:scale(1.05);
+
+}
+/* Love Message */
+
+
+#love{
+
+display:none;
+
+text-align:center;
+
+animation:show 1.5s;
+
+}
+
+
+
+@keyframes show{
+
+from{
+
+opacity:0;
+
+transform:scale(.5);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+
+
+.big{
+
+font-family:'Great Vibes';
+
+font-size:70px;
+
+color:#ff1493;
+
+}
+
+
+
+.msg{
+
+margin-top:20px;
+
+font-size:20px;
+
+font-weight:600;
+
+color:BLACK;
+
+line-height:1.8;
+
+text-shadow:
+
+0 2px 8px #ffc1d5;
+
+animation:glow 2s infinite alternate;
+
+}
+
+
+@keyframes glow{
+
+from{
+
+text-shadow:0 2px 5px #ffc1d5;
+
+}
+
+to{
+
+text-shadow:0 2px 15px #ff69a6;
+
+}
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:400px){
+
+h1{
+
+font-size:55px;
+
+}
+
+
+.big{
+
+font-size:55px;
+
+}
+
+
+input{
+
+width:230px;
+
+}
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+
+
+
+
+
+<div class="login" id="login">
+
+
+<h1>
+My Love ✿
+</h1>
+
+
+<p>
+Enter our secrate code bangara ♡‿♡
+</p>
+
+
+<input 
+type="password"
+id="pass"
+placeholder="Password">
+
+
+<br>
+
+
+<button onclick="openLove()">
+
+Unlock my heart ❤
+
+</button>
+
+
+</div>
+
+
+
+
+<div id="love">
+
+
+<div class="big">
+
+Love You ♥‿♥
+
+</div>
+
+
+<div class="msg">
+
+(づ♥‿♥)づ Love you ishtondu My Dear Chinnu 
+
+Muddu Bangaraaa❤️🌎....<BR>LOVE YOU CHOOO MUCH MY DEAR BLACK AND UNBLOCK😘
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<script>
+
+function openLove(){
+
+let p=document.getElementById("pass").value;
+
+
+if(p=="Ss"){
+
+document.getElementById("login").style.display="none";
+
+document.getElementById("love").style.display="block";
+
+}
+
+else{
+
+alert("Muchkondu correct password akilla andre hudukondu bandu hoditini bevarsii....");
+
+document.getElementById("pass").value="";
+
+document.getElementById("pass").focus();
+
+}
+
+}
+
+
+</script>
+
+
+</body>
+</html>
